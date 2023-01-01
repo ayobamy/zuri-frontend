@@ -1,4 +1,3 @@
-
 function Strenght(password) {
     let i = 0;
     if (password.length >= 4) {
@@ -20,7 +19,7 @@ function Strenght(password) {
         i++;
     }
         return i;
-    }
+}
 
 let container = document.querySelector(".container");
 document.addEventListener("keyup", function (e) {
@@ -44,12 +43,12 @@ document.addEventListener("keyup", function (e) {
 
     let pswrd = document.querySelector("#myPassword");
     let show = document.querySelector(".show");
-    show.onclick = function () {
-        if (pswrd.type === "password") {
-          pswrd.setAttribute("type", "text");
-          show.classList.add("hide");
-        } else {
-          pswrd.setAttribute("type", "password");
-          show.classList.remove("hide");
-        }
+        show.onclick = function () {
+            if (pswrd.type === "password") {
+                pswrd.setAttribute("type", "text");
+                show.classList.add("hide");
+            } else {
+                pswrd.setAttribute("type", "password");
+                show.classList.remove("hide");
+            }
     };
